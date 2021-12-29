@@ -9,12 +9,16 @@ const userSchema = new Schema({
         type: String,
         required: [true,'Email is mandatory']
     },
+    password: {
+        type: String,
+        required: [true,'Password is mandatory']
+    },
     status: {
         type: Boolean,
         required: true,
         default: true
     },
-    date:{
+    creationDate:{
         type: Date,
         required: true
     }
@@ -22,4 +26,4 @@ const userSchema = new Schema({
 
 const User = model('User',userSchema)
 
-model.exports = User
+module.exports = User
