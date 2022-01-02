@@ -1,6 +1,7 @@
 const { Router } = require('express')
 const { check } = require('express-validator')
 
+const { validateJWT } = require('../middlewares/validate-jwt')
 const { validateFields } = require('../middlewares/validate-fields')
 
 const { 
@@ -15,7 +16,10 @@ const { isEmailOk } = require('../helpers/db-validators')
 
 const router = Router()
 
-router.get('/', usersGet)
+router.get('/',[
+    validateJWT,
+    validateFields
+], usersGet)
 
 router.get('/:id', userGet)
 

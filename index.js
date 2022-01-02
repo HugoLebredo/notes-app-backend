@@ -4,9 +4,8 @@ const cors = require('cors')
 const { dbConnection } = require('./database/config')
 
 const paths = {
+        login: '/api/login',
         users: '/api/users',
-        publications: '/api/publications',
-        projects: '/api/project'
     }
 
 const app = express()
@@ -17,6 +16,7 @@ app.use( express.json() )
 
 dbConnection()
 
+app.use( paths.login, require('./routes/login') )
 app.use( paths.users, require('./routes/user') )
 
 app.listen(process.env.PORT, () => 
