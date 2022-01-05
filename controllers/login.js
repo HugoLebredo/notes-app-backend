@@ -17,12 +17,13 @@ const loginPost = async ( req = request , res = response ) => {
         : await bcrypt.compare(password,user.password)
 
     if (! ( user && passwordCorrect )) {
-        res.json({ error: "invalid user or password" }).status(401)
+        res.status(401).json({ error: "invalid user or password" })
     }
 
     const userForToken = {
-        email: user._id,
-        name: user.name
+        id: user._id,
+        name: user.name,
+        email
     }
 
     const token = jwt.sign(userForToken, tokenSecret)

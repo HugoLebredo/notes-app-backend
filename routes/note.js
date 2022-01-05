@@ -13,6 +13,9 @@ const router = Router()
 
 router.get('/',notesGet)
 
-router.post('/',noteCreate)
+router.post('/',[
+    validateJWT,
+    validateFields
+],noteCreate)
 
 module.exports = router
