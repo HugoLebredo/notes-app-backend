@@ -25,8 +25,7 @@ const validateJWT = async ( req = request, res = response, next ) => {
         const { id } = jwt.verify(token, tokenSecret)
 
         const authUser = await User.findById( id )
-        
-        console.log("usuarioooo ",authUser)
+
         //check if user exists
         if( ! (authUser || authUser.state) ) {
             return res.status(401).json({

@@ -14,8 +14,6 @@ const noteCreate = async (req = request, res = response) => {
 
     const { body, authUser } = req
 
-    console.log("Macario: ",authUser)
-
     const note = {...body}
     console.log(req)
     note.date = new Date()
