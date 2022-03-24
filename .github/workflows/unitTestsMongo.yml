@@ -1,4 +1,4 @@
-name: Unit tests and codecov
+name: Unit tests with mongo and codecov
 
 on:
   push:
