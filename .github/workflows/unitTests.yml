@@ -1,0 +1,28 @@
+name: Unit tests and codecov
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2 
+      with:
+        node-version: 16
+    - name: Create env file 📝
+      run: |
+        touch .env
+        echo MONGODB_ATLAS_TEST_secret=${{ secrets.MONGODB_ATLAS_TEST }} >> .env
+        cat .env
+        ls -al
+    - run: npm install
+    - run: npm test
+    - uses: codecov/codecov-action@v2
+      with:
+        directory: ./coverage

@@ -1,0 +1,12 @@
+[
+    {    "content": "Once upon a time",
+        "important": false,
+        "date":"2022-01-03T16:12:57.146+00:00",
+        "user": "PeterParker"
+    },
+    {    "content": "The end",
+        "important": true,
+        "date":"2022-03-03T16:23:45.146+00:00",
+        "user": "Michael_Jordan"
+    }
+]
