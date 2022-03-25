@@ -9,6 +9,9 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
+  "config":{
+    "mongo_test": "mongodb+srv://UserNotes:Gohan84@clusternotes.qg0av.mongodb.net/notesdb_test?retryWrites=true&w=majority"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
