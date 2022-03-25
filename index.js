@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 const express = require('express')
 const cors = require('cors')
 const { dbConnection } = require('./database/config')
@@ -23,3 +24,5 @@ app.use( paths.notes, require('./routes/note') )
 
 app.listen(process.env.PORT, () => 
     console.log(`App listening at http://localhost:${process.env.PORT}`))
+
+export default app

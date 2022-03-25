@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const Note = require('../models/note')
 
-//const { app, api, getAllContentFromProfiles } = require('./helpers')
+const { app, api, getAllContentFromNotes } = require('./helpers')
 
 const initialNotes = require('./mockdata/notes.json')
 
@@ -22,12 +22,12 @@ afterAll(() => {
     app.listen().close()
 })
 
-describe('Get notes', () => {
+describe('Check notes', () => {
 
     test('Notes are returned as JSON', async () => {
 
         await api
-                .get("/api/note")
+                .get("/api/notes")
                 .expect(200)
                 .expect('Content-Type',/application\/json/)
     
@@ -35,7 +35,7 @@ describe('Get notes', () => {
     
     test(`There are ${initialNotes.length} notes`, async () => {
 
-        const { notes } = await getAllContentFromProfiles()
+        const { notes } = await getAllContentFromNotes()
         
         expect(notes).toHaveLength(initialNotes.length)
 
