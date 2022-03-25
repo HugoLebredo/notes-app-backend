@@ -16,7 +16,7 @@ const dbConnection = async () => {
         console.log(error)
         throw new Error( "Cannot connect to db 🆘", connectionString)
     }
-
+    
 }
 
 module.exports = { dbConnection }

@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "config":{
+    "port":"4000",
     "mongo_test": "mongodb+srv://UserNotes:Gohan84@clusternotes.qg0av.mongodb.net/notesdb_test?retryWrites=true&w=majority"
   },
   "author": "",

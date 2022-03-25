@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648212346286" clover="3.2.0">
-  <project timestamp="1648212346287" name="All files">
-    <metrics statements="169" coveredstatements="98" conditionals="40" coveredconditionals="1" methods="15" coveredmethods="5" elements="224" coveredelements="104" complexity="0" loc="169" ncloc="169" packages="7" files="13" classes="13"/>
+<coverage generated="1648212797688" clover="3.2.0">
+  <project timestamp="1648212797688" name="All files">
+    <metrics statements="170" coveredstatements="99" conditionals="40" coveredconditionals="1" methods="15" coveredmethods="5" elements="225" coveredelements="105" complexity="0" loc="170" ncloc="170" packages="7" files="13" classes="13"/>
     <package name="controllers">
       <metrics statements="67" coveredstatements="22" conditionals="21" coveredconditionals="0" methods="8" coveredmethods="1"/>
       <file name="login.js" path="/Users/hugo/Desarrollo/notes-app-backend/controllers/login.js">
@@ -205,30 +205,31 @@
       </file>
     </package>
     <package name="tests">
-      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="helpers.js" path="/Users/hugo/Desarrollo/notes-app-backend/tests/helpers.js">
-        <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
       </file>
     </package>
   </project>
