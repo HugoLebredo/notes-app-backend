@@ -23,6 +23,8 @@ jobs:
         ls -al
     - run: npm install
     - run: npm test
+      env:
+        CI: true
     - uses: codecov/codecov-action@v2
       with:
         directory: ./coverage
