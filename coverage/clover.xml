@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648211862209" clover="3.2.0">
-  <project timestamp="1648211862209" name="All files">
-    <metrics statements="168" coveredstatements="97" conditionals="40" coveredconditionals="1" methods="15" coveredmethods="5" elements="223" coveredelements="103" complexity="0" loc="168" ncloc="168" packages="7" files="13" classes="13"/>
+<coverage generated="1648212346286" clover="3.2.0">
+  <project timestamp="1648212346287" name="All files">
+    <metrics statements="169" coveredstatements="98" conditionals="40" coveredconditionals="1" methods="15" coveredmethods="5" elements="224" coveredelements="104" complexity="0" loc="169" ncloc="169" packages="7" files="13" classes="13"/>
     <package name="controllers">
       <metrics statements="67" coveredstatements="22" conditionals="21" coveredconditionals="0" methods="8" coveredmethods="1"/>
       <file name="login.js" path="/Users/hugo/Desarrollo/notes-app-backend/controllers/login.js">
@@ -82,19 +82,20 @@
       </file>
     </package>
     <package name="database">
-      <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="11" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="config.js" path="/Users/hugo/Desarrollo/notes-app-backend/database/config.js">
-        <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="helpers">
