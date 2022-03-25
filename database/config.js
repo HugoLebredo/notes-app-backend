@@ -13,7 +13,7 @@ const dbConnection = async () => {
         console.log( "db connected 📶" )
     } catch ( error ) {
         console.log(error)
-        throw new Error( "Cannot connect to db 🆘" )
+        throw new Error( "Cannot connect to db 🆘", connectionString)
     }
 
 }
